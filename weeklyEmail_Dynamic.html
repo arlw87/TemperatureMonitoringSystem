@@ -1,0 +1,102 @@
+<html>
+    <head>
+        
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet"> 
+    
+        <style type="text/css">
+            #logo{{
+                width: 30%;
+		margin-left: auto;
+		margin-right: auto;
+            }}
+            
+            body{{
+                font-family: cursive;
+                text-align: center;
+            }}
+            
+            h2{{
+               text-decoration: underline;
+             text-align: center;
+            }}
+            
+            table{{
+                border-collapse: collapse;
+                margin-left: auto;
+                margin-right: auto;
+            }}
+            
+            th {{
+                text-align: center;
+                font-size: 17px;
+                margin: 0px;
+                padding: 5px;
+                background-color: lightgray;
+            }}
+            
+            td{{
+                text-align: center;
+                width: 200px;
+                padding: 3px;
+                margin: 0px;
+            }}
+            
+            tr:nth-child(even){{
+                background-color: #F18A00;}}
+            tr:nth-child(odd){{
+                background-color: #007581;}}
+            
+            #page{{
+                background: linear-gradient(to bottom, #ffffff 17%, #00ccff 99%);
+                width: 500px;
+                height: 550px;
+            }}
+        
+        
+        </style>
+    
+    </head>
+    <body>
+    <div id="page">
+        <img src="/home/pi/repos/freezerTemperatureMonitor/logo.jpg" id="logo">
+        <h2>Weekly Temperature Report</h2>
+        <p> <strong>Location:</strong> {}</p>
+        <p> <strong>Week commencing:</strong> {}</p>
+        <p> All temperatures are recorded at 13:00.</p>
+        <table>
+            <tr>
+                <th> Date </th>
+                <th> Temperature (<sup>o</sup>C)</th>
+            </tr>
+            <tr>
+                <td> {}</td>
+                <td> {}</td>
+            </tr>
+            <tr>
+                <td> {}</td>
+                <td>{}</td>
+            </tr>
+            <tr>
+                <td> {}</td>
+                <td>{}</td>
+            </tr>
+            <tr>
+                <td> {}</td>
+                <td>{}</td>
+            </tr>
+            <tr>
+                <td> {}</td>
+                <td>{}</td>
+            </tr>
+            <tr>
+                <td> {}</td>
+                <td>{}</td>
+            </tr>
+            <tr>
+                <td> {}</td>
+                <td>{}</td>
+            </tr>
+        </table>
+    </div>
+    </body>
+</html>
